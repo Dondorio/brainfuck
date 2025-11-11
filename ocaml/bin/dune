@@ -1,0 +1,8 @@
+(executable
+ (public_name brainfuck)
+ (name main)
+ (flags
+   (:standard -warn-error -A))
+ (libraries brainfuck ppx_sexp_conv sexplib)
+ (preprocess (pps ppx_sexp_conv))
+ (modes byte exe))
